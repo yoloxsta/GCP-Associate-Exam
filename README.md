@@ -25,8 +25,6 @@
 - [ ] Export your transactions to a local file, and perform analysis with a desktop tool.
 - [x] Export your bill to a BigQuery dataset, and then write time window-based SQL queries for analysis.
 
-
-
 ### You want to send and consume Cloud Pub/Sub messages from your App Engine application. The Cloud Pub/Sub API is currently disabled. You will use a service account to authenticate your application to the API. You want to make sure your application can use Cloud Pub/Sub. What should you do?
 
 - [x] Enable the Cloud Pub/Sub API in the API Library on the GCP Console.
