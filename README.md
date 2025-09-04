@@ -166,8 +166,6 @@
 - [ ] Use the command line to run a dry run query to estimate the number of bytes returned. Then convert that bytes estimate to dollars using the Pricing Calculator.
 - [ ] Run a select count (*) to get an idea of how many records your query will look through. Then convert that number of rows to dollars using the Pricing Calculator.
 
-
-
 ### You need to monitor resources that are distributed over different projects in Google Cloud Platform. You want to consolidate reporting under the same Stackdriver Monitoring dashboard. What should you do?
 
 - [ ] Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.
@@ -175,16 +173,12 @@
 - [x] Configure a single Stackdriver account, and link all projects to the same account.
 - [ ] Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for that Group.
 
-
-
 ### You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a dedicated configuration file. You want to follow Google's recommended practices. Which method should you use?
 
 - [x] Deployment Manager.
 - [ ] Cloud Composer.
 - [ ] Managed Instance Group.
 - [ ] Unmanaged Instance Group.
-
-
 
 ### You created an instance of SQL Server 2017 on Compute Engine to test features in the new version. You want to connect to this instance using the fewest number of steps. What should you do?
 
