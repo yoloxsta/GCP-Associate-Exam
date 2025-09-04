@@ -157,8 +157,6 @@
 - [ ] View the bucket in the Storage section of the GCP Console.
 - [ ] Create a trace in Stackdriver to view the information.
 
-
-
 ### You need to run an important query in BigQuery but expect it to return a lot of records. You want to find out how much it will cost to run the query. You are using on-demand pricing. What should you do?
 
 - [ ] Arrange to switch to Flat-Rate pricing for this query, then move back to on-demand.
@@ -214,16 +212,12 @@
 - [ ] Select the latest available cluster version for your GKE cluster.
 - [ ] Select 'Container-Optimized OS (cos)' as a node image for your GKE cluster.
 
-
-
 ### Your company uses Cloud Storage to store application backup files for disaster recovery purposes. You want to follow Google's recommended practices. Which storage option should you use?
 
 - [ ] Multi-Regional Storage.
 - [ ] Regional Storage.
 - [ ] Nearline Storage.
 - [x] Coldline Storage.
-
-
 
 ### You need to set up a policy so that videos stored in a specific Cloud Storage Regional bucket are moved to Coldline after 90 days, and then deleted after one year from their creation. How should you set up the policy?
 
