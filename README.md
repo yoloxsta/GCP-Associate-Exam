@@ -343,16 +343,12 @@
 - [ ] Deploy the container on App Engine Flexible.
 - [ ] Deploy the container on Google Kubernetes Engine, with cluster autoscaling and horizontal pod autoscaling enabled.
 
-
-
 ### Your development team needs a new Jenkins server for their project. You need to deploy the server using the fewest steps possible. What should you do?
 
 - [ ] Download and deploy the Jenkins Java WAR to App Engine Standard.
 - [ ] Create a new Compute Engine instance and install Jenkins through the command line interface.
 - [ ] Create a Kubernetes cluster on Compute Engine and create a deployment with the Jenkins Docker image.
 - [x] Use GCP Marketplace to launch the Jenkins solution.
-
-
 
 ### You are building an application that stores relational data from users. Users across the globe will use this application. Your CTO is concerned about the scaling requirements because the size of the user base is unknown. You need to implement a database solution that can scale with your user growth with minimum configuration changes. Which storage solution should you use?
 
@@ -361,16 +357,12 @@
 - [ ] Cloud Firestore.
 - [ ] Cloud Datastore.
 
-
-
 ### You are using Deployment Manager to create a Google Kubernetes Engine cluster. Using the same Deployment Manager deployment, you also want to create a DaemonSet in the kube-system namespace of the cluster. You want a solution that uses the fewest possible services.
 
 - [x] Add the cluster's API as a new Type Provider in Deployment Manager, and use the new type to create the DaemonSet.
 - [ ] Use the Deployment Manager Runtime Configurator to create a new Config resource that contains the DaemonSet definition.
 - [ ] With Deployment Manager, create a Compute Engine instance with a startup script that uses kubectl to create the DaemonSet.
 - [ ] In the cluster's definition in Deployment Manager, add a metadata that has kube-system as key and the DaemonSet manifest as value.
-
-
 
 ### You have a Virtual Machine that is currently configured with 2 vCPUs and 4 GB of memory. It is running out of memory. You want to upgrade the Virtual Machine to have 8 GB of memory. What should you do?
 
@@ -379,16 +371,12 @@
 - [ ] Stop the VM, change the machine type to n1-standard-8, and start the VM.
 - [x] Stop the VM, increase the memory to 8 GB, and start the VM.
 
-
-
 ### You created a Google Cloud Platform project with an App Engine application inside the project. You initially configured the application to be served from the us-central region. Now you want the application to be served from the asia-northeast1 region. What should you do?
 
 - [ ] Change the default region property setting in the existing GCP project to asia-northeast1.
 - [ ] Change the region property setting in the existing App Engine application from us-central to asia-northeast1.
 - [ ] Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve your application.
 - [x] Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your application.
-
-
 
 ### Several employees at your company have been creating projects with Cloud Platform and paying for it with their personal credit cards, which the company reimburses. The company wants to centralize all these projects under a single, new billing account. What should you do?
 
@@ -397,16 +385,12 @@
 - [ ] In the Google Platform Console, go to the Resource Manage and move all projects to the root Organization.
 - [x] In the Google Cloud Platform Console, create a new billing account and set up a payment method.
 
-
-
 ### You have a Dockerfile that you need to deploy on Kubernetes Engine. What should you do?
 
 - [ ] Use kubectl app deploy `<dockerfilename>`.
 - [ ] Use gcloud app deploy `<dockerfilename>`.
 - [x] Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.
 - [ ] Create a docker image from the Dockerfile and upload it to Cloud Storage. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.
-
-
 
 ### You have a project for your App Engine application that serves a development environment. The required testing has succeeded and you want to create a new project to serve as your production environment. What should you do?
 
@@ -415,8 +399,6 @@
 - [ ] Create a Deployment Manager configuration file that copies the current App Engine deployment into a new project.
 - [ ] Deploy your application again using gcloud and specify the project parameter with the new project name to create the new project.
 
-
-
 ### You are building an application that will run in your data center. The application will use Google Cloud Platform (GCP) services like AutoML. You created a service account that has appropriate access to AutoML. You need to enable authentication to the APIs from your on-premises environment. What should you do?
 
 - [ ] Use service account credentials in your on-premises application.
@@ -424,16 +406,12 @@
 - [ ] Set up direct interconnect between your data center and Google Cloud Platform to enable authentication for your on-premises applications.
 - [ ] Go to the IAM & admin console, grant a user account permissions similar to the service account permissions, and use this user account for authentication from your data center.
 
-
-
 ### You host a static website on Cloud Storage. Recently, you began to include links to PDF files on this site. Currently, when users click on the links to these PDF files, their browsers prompt them to save the file onto their local system. Instead, you want the clicked PDF files to be displayed within the browser window directly, without prompting the user to save the file locally. What should you do?
 
 - [ ] Enable Cloud CDN on the website frontend.
 - [ ] Enable 'Share publicly' on the PDF file objects.
 - [x] Set Content-Type metadata to application/pdf on the PDF file objects.
 - [ ] Add a label to the storage bucket with a key of Content-Type and value of application/pdf.
-
-
 
 ### You have an application that looks for its licensing server on the IP 10.0.3.21. You need to deploy the licensing server on Compute Engine. You do not want to change the configuration of the application and want the application to be able to reach the licensing server. What should you do?
 
