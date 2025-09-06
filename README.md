@@ -194,16 +194,12 @@
 - [ ] Assign the finance team the Billing Account User role on the billing account and the Project Billing Manager role on the organization.
 - [ ] Assign the engineering team the Billing Account User role on the billing account and the Project Billing Manager role on the organization.
 
-
-
 ### You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler feature enabled. You need to make sure that each node of the cluster will run a monitoring pod that sends container metrics to a third-party monitoring solution. What should you do?
 
 - [ ] Deploy the monitoring pod in a StatefulSet object.
 - [x] Deploy the monitoring pod in a DaemonSet object.
 - [ ] Reference the monitoring pod in a Deployment object.
 - [ ] Reference the monitoring pod in a cluster initializer at the GKE cluster creation time.
-
-
 
 ### You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and stable version of Kubernetes. What should you do?
 
@@ -226,8 +222,6 @@
 - [ ] Use gsutil rewrite and set the Delete action to 275 days (365-90).
 - [ ] Use gsutil rewrite and set the Delete action to 365 days.
 
-
-
 ### Your company has an existing GCP organization with hundreds of projects and a billing account. Your company recently acquired another company that also has hundreds of projects and its own billing account. You would like to consolidate all GCP costs of both GCP organizations onto a single invoice. You would like to consolidate all costs as of tomorrow. What should you do?
 
 - [x] Link the acquired company's projects to your company's billing account.
@@ -235,16 +229,12 @@
 - [ ] Migrate the acquired company's projects into your company's GCP organization. Link the migrated projects to your company's billing account.
 - [ ] Create a new GCP organization and a new billing account. Migrate the acquired company's projects and your company's projects into the new GCP organization and link the projects to the new billing account.
 
-
-
 ### You want to configure 10 Compute Engine instances for availability when maintenance occurs. Your requirements state that these instances should attempt to automatically restart if they crash. Also, the instances should be highly available including during system maintenance. What should you do?
 
 - [x] Create an instance template for the instances. Set the 'Automatic Restart' to on. Set the 'On-host maintenance' to Migrate VM instance. Add the instance template to an instance group.
 - [ ] Create an instance template for the instances. Set 'Automatic Restart' to off. Set 'On-host maintenance' to Terminate VM instances. Add the instance template to an instance group.
 - [ ] Create an instance group for the instances. Set the 'Autohealing' health check to healthy (HTTP).
 - [ ] Create an instance group for the instance. Verify that the 'Advanced creation options' setting for 'do not retry machine creation' is set to off.
-
-
 
 ### You have a development project with appropriate IAM roles defined. You are creating a production project and want to have the same IAM roles on the new project, using the fewest possible steps. What should you do?
 
