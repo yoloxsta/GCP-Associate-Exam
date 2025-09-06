@@ -410,16 +410,12 @@
 - [ ] Use the IP 10.0.3.21 as a custom ephemeral IP address and assign it to the licensing server.
 - [ ] Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address.
 
-
-
 ### You are deploying an application to App Engine. You want the number of instances to scale based on request rate. You need at least 3 unoccupied instances at all times. Which scaling type should you use?
 
 - [ ] Manual Scaling with 3 instances.
 - [ ] Basic Scaling with min_instances set to 3.
 - [ ] Basic Scaling with max_instances set to 3.
 - [x] Automatic Scaling with min_idle_instances set to 3.
-
-
 
 ### You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets and files in Cloud Storage. You want to follow Google-recommended practices. Which IAM roles should you grant your colleagues?
 
@@ -428,16 +424,12 @@
 - [ ] Storage Object Admin.
 - [ ] Storage Object Creator.
 
-
-
 ### You need to update a deployment in Deployment Manager without any resource downtime in the deployment. Which command should you use?
 
 - [ ] gcloud deployment-manager deployments create –config <deployment-config-path>.
 - [x] gcloud deployment-manager deployments update –config <deployment-config-path>.
 - [ ] gcloud deployment-manager resources create –config <deployment-config-path>.
 - [ ] gcloud deployment-manager resources update –config <deployment-config-path>.
-
-
 
 ### You are running an application on multiple Virtual Machines within a Managed Instance Group and have autoscaling enabled. The autoscaling policy is configured so that additional instances are added to the group if the CPU utilization of instances goes above 80%. VMs are added until the instance group reaches its maximum limit of five VMs or until CPU utilization of instances lowers to 80%. The initial delay for HTTP health checks against the instances is set to 30 seconds. The Virtual Machine instances take around three minutes to become available for users. You observe that when the instance group autoscales, it adds more instances then necessary to support the levels of end-user traffic. You want to properly maintain instance group sizes when autoscaling. What should you do?
 
@@ -446,16 +438,12 @@
 - [ ] Use a TCP health check instead of an HTTP health check.
 - [x] Increase the initial delay of the HTTP health check to 200 seconds.
 
-
-
 ### You have 32 GB of data in a single file that you need to upload to a Nearline Storage bucket. The WAN connection you are using is rated at 1 Gbps, and you are the only one on the connection. You want to use as much of the rated 1 Gbps as possible to transfer the file rapidly. How should you upload the file?
 
 - [ ] Use the GCP Console to transfer the file instead of gsutil.
 - [x] Enable parallel composite uploads using gsutil on the file transfer.
 - [ ] Decrease the TCP window size on the machine initiating the transfer.
 - [ ] Change the storage class of the bucket from Nearline to Multi-Regional.
-
-
 
 ### You deployed an App Engine application using gcloud app deploy, but it did not deploy to the intended project. You want to find out why this happened and where the application deployed. What should you do?
 
@@ -464,16 +452,12 @@
 - [ ] Go to Deployment Manager and review settings for deployment of applications.
 - [x] Go to Cloud Shell and run gcloud config list to review the Google Cloud configuration used for deployment.
 
-
-
 ### You want to verify the IAM users and roles assigned within a GCP project named my-project. What should you do?
 
 - [ ] Run gcloud iam roles list. Review the output section.
 - [ ] Run gcloud iam service-accounts list. Review the output section.
 - [x] Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles.
 - [ ] Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status.
-
-
 
 ### You need to select and configure compute resources for a set of batch processing jobs. These jobs take around 2 hours to complete and are run nightly. You want to minimize service costs. What should you do?
 
@@ -482,16 +466,12 @@
 - [x] Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type.
 - [ ] Select Compute Engine. Use VM instance types that support micro bursting.
 
-
-
 ### You want to select and configure a cost-effective solution for relational data on Google Cloud Platform. You are working with a small set of operational data in one geographic location. You need to support point-in-time recovery. What should you do?
 
 - [x] Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected.
 - [ ] Select Cloud SQL (MySQL). Select the create failover replicas option.
 - [ ] Select Cloud Spanner. Set up your instance with 2 nodes.
 - [ ] Select Cloud Spanner. Set up your instance as multi-regional.
-
-
 
 ### You are hosting an application on bare-metal servers in your own data center. The application needs access to Cloud Storage. However, security policies prevent the servers hosting the application from having public IP addresses or access to the internet. You want to follow Google-recommended practices to provide the application with access to Cloud Storage. What should you do?
 
@@ -500,8 +480,6 @@
 - [ ] 1. Use Migrate for Compute Engine (formerly known as Velostrata) to migrate those servers to Compute Engine. 2. Create an internal load balancer (ILB) that uses storage.googleapis.com as backend. 3. Configure your new instances to use this ILB as proxy.
 - [x] 1. Using Cloud VPN or Interconnect, create a tunnel to a VPC in Google Cloud. 2. Use Cloud Router to create a custom route advertisement for 199.36.153.4/30. Announce that network to your on-premises network through the VPN tunnel. 3. In your on-premises network, configure your DNS server to resolve *.googleapis.com as a CNAME to restricted.googleapis.com.
 
-
-
 ### Your company has a Google Cloud Platform project that uses BigQuery for data warehousing. Your data science team changes frequently and has few members. You need to allow members of this team to perform queries. You want to follow Google-recommended practices. What should you do?
 
 - [ ] 1. Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery jobUser role to the group.
@@ -509,16 +487,12 @@
 - [x] 1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery jobUser role to the group.
 - [ ] 1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery dataViewer user role to the group.
 
-
-
 ### You are given a project with a single Virtual Private Cloud (VPC) and a single subnetwork in the us-central1 region. There is a Compute Engine instance hosting an application in this subnetwork. You need to deploy a new instance in the same project in the europe-west1 region. This new instance needs access to the application. You want to follow Google-recommended practices. What should you do?
 
 - [x] 1. Create a subnetwork in the same VPC, in europe-west1. 2. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.
 - [ ] 1. Create a VPC and a subnetwork in europe-west1. 2. Expose the application with an internal load balancer. 3. Create the new instance in the new subnetwork and use the load balancer's address as the endpoint.
 - [ ] 1. Create a subnetwork in the same VPC, in europe-west1. 2. Use Cloud VPN to connect the two subnetworks. 3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.
 - [ ] 1. Create a VPC and a subnetwork in europe-west1. 2. Peer the 2 VPCs. 3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.
-
-
 
 ### You are building a pipeline to process time-series data. Which Google Cloud Platform services should you put in boxes 1,2,3, and 4?
 
@@ -528,8 +502,6 @@
 - [ ] Firebase Messages, Cloud Pub/Sub, Cloud Spanner, BigQuery.
 - [ ] Cloud Pub/Sub, Cloud Storage, BigQuery, Cloud Bigtable.
 - [x] Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery.
-
-
 
 ### For analysis purposes, you need to send all the logs from all of your Compute Engine instances to a BigQuery dataset called platform-logs. You have already installed the Cloud Logging agent on all the instances. You want to minimize cost. What should you do?
 
