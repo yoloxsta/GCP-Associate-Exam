@@ -548,16 +548,12 @@
 - [ ] 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add an annotation to this service: cloud.google.com/load-balancer-type: Internal 3. Peer the two VPCs together. 4. Configure the Compute Engine instance to use the address of the load balancer that has been created.
 - [ ] 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add a Cloud Armor Security Policy to the load balancer that whitelists the internal IPs of the MIG's instances. 3. Configure the Compute Engine instance to use the address of the load balancer that has been created.
 
-
-
 ### You are using Container Registry to centrally store your company's container images in a separate project. In another project, you want to create a Google Kubernetes Engine (GKE) cluster. You want to ensure that Kubernetes can download images from Container Registry. What should you do?
 
 - [x] In the project where the images are stored, grant the Storage Object Viewer IAM role to the service account used by the Kubernetes nodes.
 - [ ] When you create the GKE cluster, choose the Allow full access to all Cloud APIs option under 'Access scopes'.
 - [ ] Create a service account, and give it access to Cloud Storage. Create a P12 key for this service account and use it as an imagePullSecrets in Kubernetes.
 - [ ] Configure the ACLs on each image in Cloud Storage to give read-only access to the default Compute Engine service account.
-
-
 
 ### You deployed a new application inside your Google Kubernetes Engine cluster using the YAML file specified below. You check the status of the deployed pods and notice that one of them is still in PENDING status. You want to find out why the pod is stuck in pending status. What should you do?
 
@@ -570,16 +566,12 @@
 - [x] Review details of myapp-deployment-58ddbbb995-lp86m Pod and check for warning messages.
 - [ ] View logs of the container in myapp-deployment-58ddbbb995-lp86m pod and check for warning messages.
 
-
-
 ### You are setting up a Windows VM on Compute Engine and want to make sure you can log in to the VM via RDP. What should you do?
 
 - [ ] After the VM has been created, use your Google Account credentials to log in into the VM.
 - [x] After the VM has been created, use gcloud compute reset-windows-password to retrieve the login credentials for the VM.
 - [ ] When creating the VM, add metadata to the instance using 'windows-password' as the key and a password as the value.
 - [ ] After the VM has been created, download the JSON Private Key for the default Compute Engine service account. Use the credentials in the JSON file to log in to the VM.
-
-
 
 ### You want to configure an SSH connection to a single Compute Engine instance for users in the dev1 group. This instance is the only resource in this particular Google Cloud Platform project that the dev1 users should be able to connect to. What should you do?
 
@@ -588,16 +580,12 @@
 - [ ] Enable block project wide keys for the instance. Generate an SSH key for each user in the dev1 group. Distribute the keys to dev1 users and direct them to use their third-party tools to connect.
 - [ ] Enable block project wide keys for the instance. Generate an SSH key and associate the key with that instance. Distribute the key to dev1 users and direct them to use their third-party tools to connect.
 
-
-
 ### You need to produce a list of the enabled Google Cloud Platform APIs for a GCP project using the gcloud command line in the Cloud Shell. The project name is my-project. What should you do?
 
 - [x] Run gcloud projects list to get the project ID, and then run gcloud services list --project <project ID>.
 - [ ] Run gcloud init to set the current project to my-project, and then run gcloud services list --available.
 - [ ] Run gcloud info to view the account value, and then run gcloud services list --account <Account>.
 - [ ] Run gcloud projects describe <project ID> to verify the project value, and then run gcloud services list --available.
-
-
 
 ### You are building a new version of an application hosted in an App Engine environment. You want to test the new version with 1% of users before you completely switch your application over to the new version. What should you do?
 
