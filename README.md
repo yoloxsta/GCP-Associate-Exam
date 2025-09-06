@@ -510,8 +510,6 @@
 - [x] 1. In Cloud Logging, create a filter to view only Compute Engine logs. 2. Click Create Export. 3. Choose BigQuery as Sink Service, and the platform-logs dataset as Sink Destination.
 - [ ] 1. Create a Cloud Function that has the BigQuery User role on the platform-logs dataset. 2. Configure this Cloud Function to create a BigQuery Job that executes this query: INSERT INTO dataset.platform-logs (timestamp, log) SELECT timestamp, log FROM compute.logs WHERE timestamp > DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY) 3. Use Cloud Scheduler to trigger this Cloud Function once a day.
 
-
-
 ### You want to deploy an application on Cloud Run that processes messages from a Cloud Pub/Sub topic. You want to follow Google-recommended practices. What should you do?
 
 - [ ] 1. Create a Cloud Function that uses a Cloud Pub/Sub trigger on that topic. 2. Call your application on Cloud Run from the Cloud Function for every message.
@@ -519,16 +517,12 @@
 - [x] 1. Create a service account. 2. Give the Cloud Run Invoker role to that service account for your Cloud Run application. 3. Create a Cloud Pub/Sub subscription that uses that service account and uses your Cloud Run application as the push endpoint.
 - [ ] 1. Deploy your application on Cloud Run on GKE with the connectivity set to Internal. 2. Create a Cloud Pub/Sub subscription for that topic. 3. In the same Google Kubernetes Engine cluster as your application, deploy a container that takes the messages and sends them to your application.
 
-
-
 ### Your projects incurred more costs than you expected last month. Your research reveals that a development GKE container emitted a huge number of logs, which resulted in higher costs. You want to disable the logs quickly using the minimum number of steps. What should you do?
 
 - [x] 1. Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE container resource.
 - [ ] 1. Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE Cluster Operations resource.
 - [ ] 1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Logging.
 - [ ] 1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Monitoring.
-
-
 
 ### You've deployed a microservice called myapp1 to a Google Kubernetes Engine cluster using the YAML file specified below. You need to refactor this configuration so that the database password is not stored in plain text. You want to follow Google-recommended practices. What should you do?
 
@@ -538,8 +532,6 @@
 - [x] Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the Secret.
 - [ ] Store the database password inside a ConfigMap object. Modify the YAML file to populate the DB_PASSWORD environment variable from the ConfigMap.
 - [ ] Store the database password in a file inside a Kubernetes persistent volume, and use a persistent volume claim to mount the volume to the container.
-
-
 
 ### You have an application running in Google Kubernetes Engine (GKE) with cluster autoscaling enabled. The application exposes a TCP endpoint. There are several replicas of this application. You have a Compute Engine instance in the same region, but in another Virtual Private Cloud (VPC), called gce-network, that has no overlapping IP ranges with the first VPC. This instance needs to connect to the application on GKE. You want to minimize effort. What should you do?
 
@@ -594,16 +586,12 @@
 - [ ] Deploy a new version as a separate app in App Engine. Then configure App Engine using GCP Console to split traffic between the two apps.
 - [x] Deploy a new version of your application in App Engine. Then go to App Engine settings in GCP Console and split traffic between the current version and newly deployed versions accordingly.
 
-
-
 ### You need to provide a cost estimate for a Kubernetes cluster using the GCP pricing calculator for Kubernetes. Your workload requires high IOPs, and you will also be using disk snapshots. You start by entering the number of nodes, average hours, and average days. What should you do next?
 
 - [x] Fill in local SSD. Fill in persistent disk storage and snapshot storage.
 - [ ] Fill in local SSD. Add estimated cost for cluster management.
 - [ ] Select Add GPUs. Fill in persistent disk storage and snapshot storage.
 - [ ] Select Add GPUs. Add estimated cost for cluster management.
-
-
 
 ### You are using Google Kubernetes Engine with autoscaling enabled to host a new application. You want to expose this new application to the public, using HTTPS on a public IP address. What should you do?
 
@@ -612,16 +600,12 @@
 - [ ] Create a Kubernetes Service of type NodePort to expose the application on port 443 of each node of the Kubernetes cluster. Configure the public DNS name of your application with the IP of every node of the cluster to achieve load-balancing.
 - [ ] Create a HAProxy pod in the cluster to load-balance the traffic to all the pods of the application. Forward the public traffic to HAProxy with an iptable rule. Configure the DNS name of your application using the public IP of the node HAProxy is running on.
 
-
-
 ### You need to enable traffic between multiple groups of Compute Engine instances that are currently running two different GCP projects. Each group of Compute Engine instances is running in its own VPC. What should you do?
 
 - [ ] Verify that both projects are in a GCP Organization. Create a new VPC and add all instances.
 - [x] Verify that both projects are in a GCP Organization. Share the VPC from one project and request that the Compute Engine instances in the other project use this shared VPC.
 - [ ] Verify that you are the Project Administrator of both projects. Create two new VPCs and add all instances.
 - [ ] Verify that you are the Project Administrator of both projects. Create a new VPC and add all instances.
-
-
 
 ### You want to add a new auditor to a Google Cloud Platform project. The auditor should be allowed to read, but not modify, all project items. How should you configure the auditor's permissions?
 
@@ -630,16 +614,12 @@
 - [x] Select the built-in IAM project Viewer role. Add the user's account to this role.
 - [ ] Select the built-in IAM service Viewer role. Add the user's account to this role.
 
-
-
 ### You are operating a Google Kubernetes Engine (GKE) cluster for your company where different teams can run non-production workloads. Your Machine Learning (ML) team needs access to Nvidia Tesla P100 GPUs to train their models. You want to minimize effort and cost. What should you do?
 
 - [ ] Ask your ML team to add the accelerator: gpu annotation to their pod specification.
 - [ ] Recreate all the nodes of the GKE cluster to enable GPUs on all of them.
 - [ ] Create your own Kubernetes cluster on top of Compute Engine with nodes that have GPUs. Dedicate this cluster to your ML team.
 - [x] Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 nodeSelector to their pod specification.
-
-
 
 ### Your VMs are running in a subnet that has a subnet mask of 255.255.255.240. The current subnet has no more free IP addresses and you require an additional 10 IP addresses for new VMs. The existing and new VMs should all be able to reach each other without additional routes. What should you do?
 
@@ -648,16 +628,12 @@
 - [ ] Create a new project. Use Shared VPC to share the current network with the new project.
 - [ ] Create a new subnet with the same starting IP but a wider range to overwrite the current subnet.
 
-
-
 ### Your organization uses G Suite for communication and collaboration. All users in your organization have a G Suite account. You want to grant some G Suite users access to your Cloud Platform project. What should you do?
 
 - [ ] Enable Cloud Identity in the GCP Console for your domain.
 - [x] Grant them the required IAM roles using their G Suite email address.
 - [ ] Create a CSV sheet with all users' email addresses. Use the gcloud command line tool to convert them into Google Cloud Platform accounts.
 - [ ] In the G Suite console, add the users to a special group called cloud-console-users@yourdomain.com. Rely on the default behavior of the Cloud Platform to grant users access if they are members of this group.
-
-
 
 ### You have a Google Cloud Platform account with access to both production and development projects. You need to create an automated process to list all compute instances in development and production projects on a daily basis. What should you do?
 
@@ -666,16 +642,12 @@
 - [ ] Go to Cloud Shell and export this information to Cloud Storage on a daily basis.
 - [ ] Go to GCP Console and export this information to Cloud SQL on a daily basis.
 
-
-
 ### You have a large 5-TB AVRO file stored in a Cloud Storage bucket. Your analysts are proficient only in SQL and need access to the data stored in this file. You want to find a cost-effective way to complete their request as soon as possible. What should you do?
 
 - [ ] Load data in Cloud Datastore and run a SQL query against it.
 - [ ] Create a BigQuery table and load data in BigQuery. Run a SQL query on this table and drop this table after you complete your request.
 - [x] Create external tables in BigQuery that point to Cloud Storage buckets and run a SQL query on these external tables to complete your request.
 - [ ] Create a Hadoop cluster and copy the AVRO file to NDFS by compressing it. Load the file in a hive table and provide access to your analysts so that they can run SQL queries.
-
-
 
 ### You need to verify that a Google Cloud Platform service account was created at a particular time. What should you do?
 
@@ -684,16 +656,12 @@
 - [ ] Filter the Activity log to view the Data Access category. Filter the Resource type to Service Account.
 - [ ] Filter the Activity log to view the Data Access category. Filter the Resource type to Google Project.
 
-
-
 ### You deployed an LDAP server on Compute Engine that is reachable via TLS through port 636 using UDP. You want to make sure it is reachable by clients over that port. What should you do?
 
 - [ ] Add the network tag allow-udp-636 to the VM instance running the LDAP server.
 - [ ] Create a route called allow-udp-636 and set the next hop to be the VM instance running the LDAP server.
 - [x] Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag.
 - [ ] Add a network tag of your choice to the instance running the LDAP server. Create a firewall rule to allow egress on UDP port 636 for that network tag.
-
-
 
 ### You need to set a budget alert for use of Compute Engine services on one of the three Google Cloud Platform projects that you manage. All three projects are linked to a single billing account. What should you do?
 
@@ -702,16 +670,12 @@
 - [ ] Verify that you are the project administrator. Select the associated billing account and create a budget for the appropriate project.
 - [ ] Verify that you are project administrator. Select the associated billing account and create a budget and a custom alert.
 
-
-
 ### You are migrating a production-critical on-premises application that requires 96 vCPUs to perform its task. You want to make sure the application runs in a similar environment on GCP. What should you do?
 
 - [x] When creating the VM, use machine type n1-standard-96.
 - [ ] When creating the VM, use Intel Skylake as the CPU platform.
 - [ ] Create the VM using Compute Engine default settings. Use gcloud to modify the running instance to have 96 vCPUs.
 - [ ] Start the VM using Compute Engine default settings, and adjust as you go based on Rightsizing Recommendations.
-
-
 
 ### You want to configure a solution for archiving data in a Cloud Storage bucket. The solution must be cost-effective. Data with multiple versions should be archived after 30 days. Previous versions are accessed once a month for reporting. This archive data is also occasionally updated at month-end. What should you do?
 
@@ -720,16 +684,12 @@
 - [ ] Add a bucket lifecycle rule that archives data from regional storage after 30 days to Coldline Storage.
 - [ ] Add a bucket lifecycle rule that archives data from regional storage after 30 days to Nearline Storage.
 
-
-
 ### Your company's infrastructure is on-premises, but all machines are running at maximum capacity. You want to burst to Google Cloud. The workloads on Google Cloud must be able to directly communicate to the workloads on-premises using a private IP range. What should you do?
 
 - [ ] In Google Cloud, configure the VPC as a host for Shared VP.
 - [ ] In Google Cloud, configure the VPC for VPC Network Peering.
 - [ ] Create bastion hosts both in your on-premises environment and on Google Cloud. Configure both as proxy servers using their public IP addresses.
 - [x] Set up Cloud VPN between the infrastructure on-premises and Google Cloud.
-
-
 
 ### You want to select and configure a solution for storing and archiving data on Google Cloud Platform. You need to support compliance objectives for data from one geographic location. This data is archived after 30 days and needs to be accessed annually. What should you do?
 
@@ -738,16 +698,12 @@
 - [ ] Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage.
 - [x] Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.
 
-
-
 ### Your company uses BigQuery for data warehousing. Over time, many different business units in your company have created 1000+ datasets across hundreds of projects. Your CIO wants you to examine all datasets to find tables that contain an employee_ssn column. You want to minimize effort in performing this task. What should you do?
 
 - [x] Go to Data Catalog and search for employee_ssn in the search box.
 - [ ] Write a shell script that uses the bq command line tool to loop through all the projects in your organization.
 - [ ] Write a script that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find the employee_ssn column.
 - [ ] Write a Cloud Dataflow job that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find employee_ssn column.
-
-
 
 ### You create a Deployment with 2 replicas in a Google Kubernetes Engine cluster that has a single preemptible node pool. After a few minutes, you use kubectl to examine the status of your Pod and observe that one of them is still in Pending status. What is the most likely cause?
 
@@ -758,16 +714,12 @@
 - [ ] The node pool is configured with a service account that does not have permission to pull the container image used by the pending Pod.
 - [x] The pending Pod was originally scheduled on a node that has been preempted between the creation of the Deployment and your verification of the Pods' status. It is currently being rescheduled on a new node.
 
-
-
 ### You want to find out when users were added to Cloud Spanner Identity Access Management (IAM) roles on your Google Cloud Platform (GCP) project. What should you do in the GCP Console?
 
 - [ ] Open the Cloud Spanner console to review configurations.
 - [ ] Open the IAM &amp; admin console to review IAM policies for Cloud Spanner roles.
 - [ ] Go to the Stackdriver Monitoring console and review information for Cloud Spanner.
 - [x] Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles.
-
-
 
 ### Your company implemented BigQuery as an enterprise data warehouse. Users from multiple business units run queries on this data warehouse. However, you notice that query costs for BigQuery are very high, and you need to control costs. Which two methods should you use? (Choose two.)
 
@@ -777,16 +729,12 @@
 - [ ] Split your BigQuery data warehouse into multiple data warehouses for each business unit.
 - [x] Change your BigQuery query model from on-demand to flat rate. Apply the appropriate number of slots to each Project.
 
-
-
 ### You are building a product on top of Google Kubernetes Engine (GKE). You have a single GKE cluster. For each of your customers, a Pod is running in that cluster, and your customers can run arbitrary code inside their Pod. You want to maximize the isolation between your customers' Pods. What should you do?
 
 - [ ] Use Binary Authorization and whitelist only the container images used by your customers' Pods.
 - [ ] Use the Container Analysis API to detect vulnerabilities in the containers used by your customers' Pods.
 - [x] Create a GKE node pool with a sandbox type configured to gvisor. Add the parameter runtimeClassName: gvisor to the specification of your customers' Pods.
 - [ ] Use the cos_containerd image for your GKE nodes. Add a nodeSelector with the value cloud.google.com/gke-os-distribution: cos_containerd to the specification of your customers' Pods.
-
-
 
 ### Your customer has implemented a solution that uses Cloud Spanner and notices some read latency-related performance issues on one table. This table is accessed only by their users using a primary key. The table schema is shown below. You want to resolve the issue. What should you do?
 
@@ -799,8 +747,6 @@
 
 ![DDL](images/ddl.png)
 
-
-
 ### Your finance team wants to view the billing report for your projects. You want to make sure that the finance team does not get additional permissions to the project. What should you do?
 
 - [ ] Add the group for the finance team to roles/billing user role.
@@ -808,16 +754,12 @@
 - [x] Add the group for the finance team to roles/billing viewer role.
 - [ ] Add the group for the finance team to roles/billing project/Manager role.
 
-
-
 ### Your organization has strict requirements to control access to Google Cloud projects. You need to enable your Site Reliability Engineers (SREs) to approve requests from the Google Cloud support team when an SRE opens a support case. You want to follow Google-recommended practices. What should you do?
 
 - [ ] Add your SREs to roles/iam.roleAdmin role.
 - [ ] Add your SREs to roles/accessapproval.approver role.
 - [ ] Add your SREs to a group and then add this group to roles/iam.roleAdmin.role.
 - [x] Add your SREs to a group and then add this group to roles/accessapproval.approver role.
-
-
 
 ### You need to host an application on a Compute Engine instance in a project shared with other teams. You want to prevent the other teams from accidentally causing downtime on that application. Which feature should you use?
 
