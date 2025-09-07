@@ -786,16 +786,12 @@
 - [x] Install the google-cloud-sdk-datastore-emulator component using the apt get install command.
 - [ ] Install the cloud-datastore-emulator component using the gcloud components install command.
 
-
-
 ### Your company set up a complex organizational structure on Google Cloud. The structure includes hundreds of folders and projects. Only a few team members should be able to view the hierarchical structure. You need to assign minimum permissions to these team members, and you want to follow Google-recommended practices. What should you do?
 
 - [ ] Add the users to roles/browser role.
 - [ ] Add the users to roles/iam.roleViewer role.
 - [x] Add the users to a group, and add this group to roles/browser.
 - [ ] Add the users to a group, and add this group to roles/iam.roleViewer role.
-
-
 
 ### Your company has a single sign-on (SSO) identity provider that supports Security Assertion Markup Language (SAML) integration with service providers. Your company has users in Cloud Identity. You would like users to authenticate using your company's SSO provider. What should you do?
 
@@ -804,8 +800,6 @@
 - [ ] Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Mobile &amp; Desktop Apps.
 - [ ] Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Web Server Applications.
 
-
-
 ### Your organization has a dedicated person who creates and manages all service accounts for Google Cloud projects. You need to assign this person the minimum role for projects. What should you do?
 
 - [ ] Add the user to roles/iam.roleAdmin role.
@@ -813,16 +807,12 @@
 - [ ] Add the user to roles/iam.serviceAccountUser role.
 - [x] Add the user to roles/iam.serviceAccountAdmin role.
 
-
-
 ### You are building an archival solution for your data warehouse and have selected Cloud Storage to archive your data. Your users need to be able to access this archived data once a quarter for some regulatory requirements. You want to select a cost-efficient option. Which storage option should you use?
 
 - [ ] Cold Storage.
 - [x] Nearline Storage.
 - [ ] Regional Storage.
 - [ ] Multi-Regional Storage.
-
-
 
 ### A team of data scientists infrequently needs to use a Google Kubernetes Engine (GKE) cluster that you manage. They require GPUs for some long-running, nonrestartable jobs. You want to minimize cost. What should you do?
 
