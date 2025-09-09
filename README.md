@@ -1148,16 +1148,12 @@
 - [ ] Create a new cluster with n2-highmem-16 nodes. Redeploy the pods and delete the old cluster.
 - [ ] Create a new cluster with both n1-standard-2 and n2-highmem-16 nodes. Redeploy the pods and delete the old cluster.
 
-
-
 ### You have an application that uses Cloud Spanner as a database backend to keep current state information about users. Cloud Bigtable logs all events triggered by users. You export Cloud Spanner data to Cloud Storage during daily backups. One of your analysts asks you to join data from Cloud Spanner and Cloud Bigtable for specific users. You want to complete this ad hoc request as efficiently as possible. What should you do?
 
 - [ ] Create a dataflow job that copies data from Cloud Bigtable and Cloud Storage for specific users.
 - [ ] Create a dataflow job that copies data from Cloud Bigtable and Cloud Spanner for specific users.
 - [ ] Create a Cloud Dataproc cluster that runs a Spark job to extract data from Cloud Bigtable and Cloud Storage for specific users.
 - [x] Create two separate BigQuery external tables on Cloud Storage and Cloud Bigtable. Use the BigQuery console to join these tables through user fields, and apply appropriate filters.
-
-
 
 ### You are hosting an application from Compute Engine Virtual Machines (VMs) in us-central1-a. You want to adjust your design to support the failure of a single Compute Engine zone, eliminate downtime, and minimize cost. What should you do?
 
@@ -1166,16 +1162,12 @@
 - [ ] Create an HTTP(S) Load Balancer. Create one or more global forwarding rules to direct traffic to your VMs.
 - [ ] Perform regular backups of your application. Create a Cloud Monitoring Alert and be notified if your application becomes unavailable. Restore from backups when notified.
 
-
-
 ### A colleague handed over a Google Cloud Platform project for you to maintain. As part of a security checkup, you want to review who has been granted the Project Owner role. What should you do?
 
 - [ ] In the console, validate which SSH keys have been stored as project-wide keys.
 - [ ] Navigate to Identity-Aware Proxy and check the permissions for these resources.
 - [ ] Enable Audit Logs on the IAM &amp; admin page for all resources, and validate the results.
 - [x] Use the command gcloud projects get-iam-policy to view the current role assignments.
-
-
 
 ### You are running multiple VPC-native Google Kubernetes Engine clusters in the same subnet. The IPs available for the nodes are exhausted, and you want to ensure that the clusters can grow in nodes when needed. What should you do?
 
@@ -1184,15 +1176,12 @@
 - [ ] Create a new VPC, and set up VPC peering with the existing VP.
 - [x] Expand the CIDR range of the relevant subnet for the cluster.
 
-
-
 ### You have a batch workload that runs every night and uses a large number of Virtual Machines (VMs). It is fault-tolerant and can tolerate some of the VMs being terminated. The current cost of VMs is too high. What should you do?
 
 - [x] Run a test using simulated maintenance events. If the test is successful, use preemptible N1 Standard VMs when running future jobs.
 - [ ] Run a test using simulated maintenance events. If the test is successful, use N1 Standard VMs when running future jobs.
 - [ ] Run a test using a Managed Instance Group. If the test is successful, use N1 Standard VMs in the Managed Instance Group when running future jobs.
 - [ ] Run a test using N1 standard VMs instead of N2. If the test is successful, use N1 Standard VMs when running future jobs.
-
 
 ### You are working with a user to set up an application in a new VPC behind a firewall. The user is concerned about data egress. You want to configure the fewest open egress ports. What should you do?
 
@@ -1208,7 +1197,6 @@
 - [ ] Tag all the instances with the same network tag. Create a firewall rule in the VPC to grant TCP access on port 22 for traffic from the operations partner to instances with the network tag.
 - [ ] Set up Cloud VPN between your Google Cloud VPC and the internal network of the operations partner.
 - [ ] Ask the operations partner to generate SSH key pairs, and add the public keys to the VM instances.
-
 
 ### You have created a code snippet that should be triggered whenever a new file is uploaded to a Cloud Storage bucket. You want to deploy this code snippet. What should you do?
 
@@ -1232,7 +1220,6 @@
 - [ ] Allow only a single Service Account access to read the data.
 - [x] Enable Data Access audit logs for the Cloud Storage API.
 
-
 ### You are the team lead of a group of 10 developers. You provided each developer with an individual Google Cloud Project that they can use as their personal sandbox to experiment with different Google Cloud solutions. You want to be notified if any of the developers are spending above $500 per month on their sandbox environment. What should you do?
 
 - [ ] Create a single budget for all projects and configure budget alerts on this budget.
@@ -1240,14 +1227,12 @@
 - [x] Create a budget per project and configure budget alerts on all of these budgets.
 - [ ] Create a single billing account for all sandbox projects and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per project.
 
-
 ### You are deploying a production application on Compute Engine. You want to prevent anyone from accidentally destroying the instance by clicking the wrong button. What should you do?
 
 - [ ] Disable the flag Delete boot disk when instance is deleted.
 - [x] Enable delete protection on the instance.
 - [ ] Disable Automatic restart on the instance.
 - [ ] Enable Preemptibility on the instance.
-
 
 ### Your company uses a large number of Google Cloud services centralized in a single project. All teams have specific projects for testing and development. The DevOps team needs access to all of the production services in order to perform their job. You want to prevent Google Cloud product changes from broadening their permissions in the future. You want to follow Google-recommended practices. What should you do?
 
@@ -1265,7 +1250,6 @@
 - [ ] Build a Cloud function that triggers a timer of 45 days to delete objects that have expired.
 - [ ] Develop a script that loops through all Cloud Storage buckets and deletes any buckets that are older than 45 days.
 
-
 ### Your company wants to standardize the creation and management of multiple Google Cloud resources using Infrastructure as Code. You want to minimize the amount of repetitive code needed to manage the environment. What should you do?
 
 - [x] Develop templates for the environment using Cloud Deployment Manager.
@@ -1280,15 +1264,12 @@
 - [ ] Review the Identity-Aware Proxy settings for each resource.
 - [ ] Create a Data Loss Prevention job.
 
-
 ### Your company has embraced a hybrid cloud strategy where some of the applications are deployed on Google Cloud. A Virtual Private Network (VPN) tunnel connects your Virtual Private Cloud (VPC) in Google Cloud with your company's on-premises network. Multiple applications in Google Cloud need to connect to an on-premises database server, and you want to avoid having to change the IP configuration in all of your applications when the IP of the database changes. What should you do?
 
 - [ ] Configure Cloud NAT for all subnets of your VPC to be used when egressing from the VM instances.
 - [x] Create a private zone on Cloud DNS, and configure the applications with the DNS name.
 - [ ] Configure the IP of the database as custom metadata for each instance, and query the metadata server.
 - [ ] Query the Compute Engine internal DNS from the applications to retrieve the IP of the database.
-
-
 ### You have developed a containerized web application that will serve internal colleagues during business hours. You want to ensure that no costs are incurred outside of the hours the application is used. You have just created a new Google Cloud project and want to deploy the application. What should you do?
 
 - [ ] Deploy the container on Cloud Run for Anthos, and set the minimum number of instances to zero.
