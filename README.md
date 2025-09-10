@@ -1094,16 +1094,12 @@
 - [ ] Ingest the data into Datastore. Store data in an entity group based on the device.
 - [x] Ingest the data into Cloud Bigtable. Create a row key based on the event timestamp.
 
-
-
 ### You are asked to set up application performance monitoring on Google Cloud projects A, B, and C as a single pane of glass. You want to monitor CPU, memory, and disk. What should you do?
 
 - [ ] Enable API and then share charts from project A, B, and C.
 - [ ] Enable API and then give the metrics.reader role to projects A, B, and C.
 - [ ] Enable API and then use default dashboards to view all projects in sequence.
 - [x] Enable API, create a workspace under project A, and then add projects B and C.
-
-
 
 ### You created several resources in multiple Google Cloud projects. All projects are linked to different billing accounts. To better estimate future charges, you want to have a single visual representation of all costs incurred. You want to include new cost data as soon as possible. What should you do?
 
@@ -1112,8 +1108,6 @@
 - [ ] Fill all resources in the Pricing Calculator to get an estimate of the monthly cost.
 - [ ] Use the Reports view in the Cloud Billing Console to view the desired cost information.
 
-
-
 ### Your company has workloads running on Compute Engine and on-premises. The Google Cloud Virtual Private Cloud (VPC) is connected to your WAN over a Virtual Private Network (VPN). You need to deploy a new Compute Engine instance and ensure that no public Internet traffic can be routed to it. What should you do?
 
 - [x] Create the instance without a public IP address.
@@ -1121,16 +1115,12 @@
 - [ ] Create a deny-all egress firewall rule on the VPC network.
 - [ ] Create a route on the VPC to route all traffic to the instance over the VPN tunnel.
 
-
-
 ### Your team maintains the infrastructure for your organization. The current infrastructure requires changes. You need to share your proposed changes with the rest of the team. You want to follow Google's recommended best practices. What should you do?
 
 - [ ] Use Deployment Manager templates to describe the proposed changes and store them in a Cloud Storage bucket.
 - [x] Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories.
 - [ ] Apply the changes in a development environment, run gcloud compute instances list, and then save the output in a shared Storage bucket.
 - [ ] Apply the changes in a development environment, run gcloud compute instances list, and then save the output in Cloud Source Repositories.
-
-
 
 ### You have a Compute Engine instance hosting an application used between 9 AM and 6 PM on weekdays. You want to back up this instance daily for disaster recovery purposes. You want to keep the backups for 30 days. You want the Google-recommended solution with the least management overhead and the least number of services. What should you do?
 
