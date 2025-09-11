@@ -130,8 +130,6 @@
 - [ ] Create a new Managed Instance Group with an updated instance template. Add the group to the backend service for the load balancer. When all instances in the new Managed Instance Group are healthy, delete the old Managed Instance Group.
 - [ ] Create a new instance template with the new application version. Update the existing Managed Instance Group with the new instance template. Delete the instances in the Managed Instance Group to allow the Managed Instance Group to recreate the instance using the new instance template.
 
-
-
 ### You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. What should you do?
 
 - [ ] Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role.
@@ -139,16 +137,12 @@
 - [ ] Run gcloud iam roles describe roles/spanner.viewer –project my-project. Add the users to the role.
 - [ ] Run gcloud iam roles describe roles/spanner.viewer –project my-project. Add the users to a new group. Add the group to the role.
 
-
-
 ### You need to create a new billing account and then link it with an existing Google Cloud Platform project. What should you do?
 
 - [ ] Verify that you are Project Billing Manager for the GCP project. Update the existing project to link it to the existing billing account.
 - [x] Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project.
 - [ ] Verify that you are Billing Administrator for the billing account. Create a new project and link the new project to the existing billing account.
 - [ ] Verify that you are Billing Administrator for the billing account. Update the existing project to link it to the existing billing account.
-
-
 
 ### You have sensitive data stored in three Cloud Storage buckets and have enabled data access logging. You want to verify activities for a particular user for these buckets, using the fewest possible steps. You need to verify the addition of metadata labels and which files have been viewed from those buckets. What should you do?
 
