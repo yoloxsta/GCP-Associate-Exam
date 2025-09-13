@@ -746,16 +746,12 @@
 - [ ] Use a sole-tenant node.
 - [x] Enable deletion protection on the instance.
 
-
-
 ### Your organization needs to grant users access to query datasets in BigQuery but prevent them from accidentally deleting the datasets. You want a solution that follows Google-recommended practices. What should you do?
 
 - [ ] Add users to roles/bigquery user role only, instead of roles/bigquery dataOwner.
 - [ ] Add users to roles/bigquery dataEditor role only, instead of roles/bigquery dataOwner.
 - [ ] Create a custom role by removing delete permissions, and add users to that role only.
 - [x] Create a custom role by removing delete permissions. Add users to the group, and then add the group to the custom role.
-
-
 
 ### You have a developer laptop with the Cloud SDK installed on Ubuntu. The Cloud SDK was installed from the Google Cloud Ubuntu package repository. You want to test your application locally on your laptop with Cloud Datastore. What should you do?
 
@@ -799,16 +795,12 @@
 - [ ] Create a node pool with preemptible VMs and GPUs attached to those VMs.
 - [x] Create a node pool of instances with GPUs, and enable autoscaling on this node pool with a minimum size of 1.
 
-
-
 ### Your organization has user identities in Active Directory. Your organization wants to use Active Directory as their source of truth for identities. Your organization wants to have full control over the Google accounts used by employees for all Google services, including your Google Cloud Platform (GCP) organization. What should you do?
 
 - [x] Use Google Cloud Directory Sync (GCDS) to synchronize users into Cloud Identity.
 - [ ] Use the cloud Identity APIs and write a script to synchronize users to Cloud Identity.
 - [ ] Export users from Active Directory as a CSV and import them to Cloud Identity via the Admin Console.
 - [ ] Ask each employee to create a Google account using self signup. Require that each employee use their company email address and password.
-
-
 
 ### You have successfully created a development environment in a project for an application. This application uses Compute Engine and Cloud SQL. Now you need to create a production environment for this application. The security team has forbidden the existence of network routes between these 2 environments and has asked you to follow Google-recommended practices. What should you do?
 
