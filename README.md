@@ -1239,14 +1239,12 @@
 - [ ] Configure an External HTTP(s) load balancer in front of the application servers.
 - [x] Configure an External Network load balancer in front of the application servers.
 
-
 ### You are working for a hospital that stores its medical images in an on-premises data room. The hospital wants to use Cloud Storage for archival storage of these images. The hospital wants an automated process to upload any new medical images to Cloud Storage. You need to design and implement a solution. What should you do?
 
 - [ ] Create a Pub/Sub topic, and enable a Cloud Storage trigger for the Pub/Sub topic. Create an application that sends all medical images to the Pub/Sub topic.
 - [ ] Deploy a Dataflow job from the batch template, Datastore to Cloud Storage. Schedule the batch job on the desired interval.
 - [x] Create a script that uses the gsutil command line interface to synchronize the on-premises storage with Cloud Storage. Schedule the script as a cron job.
 - [ ] In the Cloud Console, go to Cloud Storage. Upload the relevant images to the appropriate bucket.
-
 
 ### Your auditor wants to view your organization's use of data in Google Cloud. The auditor is most interested in auditing who accessed data in Cloud Storage buckets. You need to help the auditor access the data they need. What should you do?
 
@@ -1255,14 +1253,12 @@
 - [ ] Assign the appropriate permissions, and the use Cloud Monitoring to review metrics.
 - [ ] Use the export logs API to provide the Admin Activity Audit Logs in the format they want.
 
-
 ### You received a JSON file that contained a private key of a Service Account in order to get access to several resources in a Google Cloud project. You downloaded and installed the Cloud SDK and want to use this private key for authentication and authorization when performing gcloud commands. What should you do?
 
 - [ ] Use the command gcloud auth login and point it to the private key.
 - [x] Use the command gcloud auth activate-service-account and point it to the private key.
 - [ ] Place the private key file in the installation directory of the Cloud SDK and rename it to credentials.json.
 - [ ] Place the private key file in your home directory and rename it to GOOGLE_APPLICATION_CREDENTIALS.
-
 
 ### You are working with a Cloud SQL MySQL database at your company. You need to retain a month-end copy of the database for three years for audit purposes. What should you do?
 
@@ -1279,14 +1275,12 @@
 - [x] Create a custom log-based metric for the specific error to be used in an Alerting Policy.
 - [ ] Grant Project Owner access to the Service Account.
 
-
 ### You are developing a financial trading application that will be used globally. Data is stored and queried using a relational structure, and clients from all over the world should get the exact identical state of the data. The application will be deployed in multiple regions to provide the lowest latency to end users. You need to select a storage option for the application data while minimizing latency. What should you do?
 
 - [ ] Use Cloud Bigtable for data storage.
 - [ ] Use Cloud SQL for data storage.
 - [x] Use Cloud Spanner for data storage.
 - [ ] Use Firestore for data storage.
-
 
 ### You are about to deploy a new Enterprise Resource Planning (ERP) system on Google Cloud. The application holds the full database in-memory for fast data access, and you need to configure the most appropriate resources on Google Cloud for this application. What should you do?
 
@@ -1303,7 +1297,6 @@
 - [ ] Create and deploy a Job per microservice.
 - [x] Create and deploy a Deployment per microservice.
 
-
 ### You will have several applications running on different Compute Engine instances in the same project. You want to specify at a more granular level the service account each instance uses when calling Google Cloud APIs. What should you do?
 
 - [x] When creating the instances, specify a Service Account for each instance.
@@ -1318,14 +1311,12 @@
 - [ ] Download a MongoDB installation package, and run it on Compute Engine instances.
 - [ ] Download a MongoDB installation package, and run it on a Managed Instance Group.
 
-
 ### You are managing a project for the Business Intelligence (BI) department in your company. A data pipeline ingests data into BigQuery via streaming. You want the users in the BI department to be able to run the custom SQL queries against the latest data in BigQuery. What should you do?
 
 - [ ] Create a Data Studio dashboard that uses the related BigQuery tables as a source and give the BI team view access to the Data Studio dashboard.
 - [ ] Create a Service Account for the BI team and distribute a new private key to each member of the BI team.
 - [ ] Use Cloud Scheduler to schedule a batch Dataflow job to copy the data from BigQuery to the BI team's internal data warehouse.
 - [x] Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.
-
 
 ### Your company is moving its entire workload to Compute Engine. Some servers should be accessible through the Internet, and other servers should only be accessible over the internal network. All servers need to be able to talk to each other over specific ports and protocols. The current on-premises network relies on a demilitarized zone (DMZ) for the public servers and a Local Area Network (LAN) for the private servers. You need to design the networking infrastructure on Google Cloud to match these requirements. What should you do?
 
