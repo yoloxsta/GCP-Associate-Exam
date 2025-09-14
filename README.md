@@ -63,7 +63,6 @@
 - [ ] Create an instance template, and use the template in a Managed Instance Group that scales up and down based on the time of day.
 - [ ] Use a set of third-party tools to build automation around scaling the application up and down, based on Stackdriver CPU usage monitoring.
 
-
 ### You need to set up permissions for a set of Compute Engine instances to enable them to write data into a particular Cloud Storage bucket. You want to follow Google-recommended practices. What should you do?
 
 - [ ] Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/devstorage.write_only'.
