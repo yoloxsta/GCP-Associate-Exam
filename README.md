@@ -963,8 +963,6 @@
 - [ ] Store credentials for service accounts with appropriate access for Google services in a config file, and deploy this config file with your application.
 - [ ] Store credentials for your user account with appropriate access for Google services in a config file, and deploy this config file with your application.
 
-
-
 ### You need to create a Compute Engine instance in a new project that doesn't exist yet. What should you do?
 
 - [x] Using the Cloud SDK, create a new project, enable the Compute Engine API in that project, and then create the instance specifying your new project.
