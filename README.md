@@ -84,8 +84,6 @@
 - [ ] In the Instance Template, add the label 'health-check'.
 - [ ] In the Instance Template, add a startup script that sends a heartbeat to the metadata server.
 
-
-
 ### You are deploying an application to a Compute Engine VM in a Managed Instance Group. The application must be running at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance group?
 
 - [x] Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
