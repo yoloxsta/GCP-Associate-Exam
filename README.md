@@ -91,8 +91,6 @@
 - [ ] Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
 - [ ] Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
 
-
-
 ### You have production and test workloads that you want to deploy on Compute Engine. Production VMs need to be in a different subnet than the test VMs. All the VMs must be able to reach each other over internal IP without creating additional routes. You need to set up VPC and the 2 subnets. Which configuration meets these requirements?
 
 - [x] Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.
@@ -106,7 +104,6 @@
 - [ ] Configure an internal TCP load balancer.
 - [ ] Configure an external SSL proxy load balancer.
 - [ ] Configure an external TCP proxy load balancer.
-
 
 ### You have a web application deployed as a Managed Instance Group. You have a new version of the application to gradually deploy. Your web application is currently receiving live web traffic. You want to ensure that the available capacity does not decrease during the deployment. What should you do?
 
@@ -164,8 +161,6 @@
 - [ ] Set a Windows password in the GCP Console. Verify that a firewall rule for port 22 exists. Click the RDP button in the GCP Console and supply the credentials to log in.
 - [ ] Set a Windows username and password in the GCP Console. Verify that a firewall rule for port 3389 exists. Click the RDP button in the GCP Console, and supply the credentials to log in.
 
-
-
 ### You are the organization and billing administrator for your company. The engineering team has the Project Creator role on the organization. You do not want the engineering team to be able to link projects to the billing account. Only the finance team should be able to link a project to a billing account, but they should not be able to make any other changes to projects. What should you do?
 
 - [x] Assign the finance team only the Billing Account User role on the billing account.
@@ -222,16 +217,12 @@
 - [ ] In the Google Cloud Platform Console, use the 'create role from role' functionality.
 - [ ] In the Google Cloud Platform Console, use the 'create role' functionality and select all applicable permissions.
 
-
-
 ### You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?
 
 - [ ] Use gcloud config configurations describe to review the output.
 - [ ] Use gcloud config configurations activate and gcloud config list to review the output.
 - [ ] Use kubectl config get-contexts to review the output.
 - [x] Use kubectl config use-context and kubectl config view to review the output.
-
-
 
 ### You need to configure IAM access audit logging in BigQuery for external auditors. You want to follow Google-recommended practices. What should you do?
 
@@ -240,16 +231,12 @@
 - [ ] Add the auditor user accounts to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.
 - [ ] Add the auditor user accounts to two new custom IAM roles.
 
-
-
 ### You need to create a custom VPC with a single subnet. The subnet's range must be as large as possible. Which range should you use?
 
 - [ ] 0.0.0.0/0.
 - [x] 10.0.0.0/8.
 - [ ] 172.16.0.0/12.
 - [ ] 192.168.0.0/16.
-
-
 
 ### You recently deployed a new version of an application to App Engine and then discovered a bug in the release. You need to immediately revert to the prior version of the application. What should you do?
 
@@ -258,8 +245,6 @@
 - [x] On the App Engine Versions page of the GCP Console, route 100% of the traffic to the previous version.
 - [ ] Deploy the original version as a separate application. Then go to App Engine settings and split traffic between applications so that the original version serves 100% of the requests.
 
-
-
 ### You want to configure Autohealing for network load balancing for a group of Compute Engine instances that run in multiple zones, using the fewest possible steps. You need to configure re-creation of VMs if they are unresponsive after 3 attempts of 10 seconds each. What should you do?
 
 - [ ] Create an HTTP load balancer with a backend configuration that references an existing instance group. Set the health check to healthy (HTTP).
@@ -267,14 +252,12 @@
 - [x] Create a Managed Instance Group. Set the Autohealing health check to healthy (HTTP).
 - [ ] Create a Managed Instance Group. Verify that the autoscaling setting is on.
 
-
 ### You have a Linux VM that must connect to Cloud SQL. You created a service account with the appropriate access rights. You want to make sure that the VM uses this service account instead of the default Compute Engine service account. What should you do?
 
 - [x] When creating the VM via the web console, specify the service account under the 'Identity and API Access' section.
 - [ ] Download a JSON Private Key for the service account. On the Project Metadata, add that JSON as the value for the key compute-engine-service-account.
 - [ ] Download a JSON Private Key for the service account. On the Custom Metadata of the VM, add that JSON as the value for the key compute-engine-service-account.
 - [ ] Download a JSON Private Key for the service account. After creating the VM, ssh into the VM and save the JSON under ~/.gcloud/compute-engine-service-account.json.
-
 
 ### You have one project called proj-sa where you manage all your service accounts. You want to be able to use a service account from this project to take snapshots of VMs running in another project called proj-vm. What should you do?
 
