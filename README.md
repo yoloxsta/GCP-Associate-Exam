@@ -945,16 +945,12 @@
 - [ ] Configure a Health Check on the instance and set a Low Healthy Threshold value.
 - [x] Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.
 
-
-
 ### An application generates daily reports in a Compute Engine Virtual Machine (VM). The VM is in the project corp-iot-insights. Your team operates only in the project corp-aggregate-reports and needs a copy of the daily exports in the bucket corp-aggregate-reports-storage. You want to configure access so that the daily reports from the VM are available in the bucket corp-aggregate-reports-storage and use as few steps as possible while following Google-recommended practices. What should you do?
 
 - [ ] Move both projects under the same folder.
 - [x] Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage.
 - [ ] Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights.
 - [ ] Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.
-
-
 
 ### You built an application on your development laptop that uses Google Cloud services. Your application uses Application Default Credentials for authentication and works fine on your development laptop. You want to migrate this application to a Compute Engine Virtual Machine (VM) and set up authentication using Google-recommended practices and minimal changes. What should you do?
 
