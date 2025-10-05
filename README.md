@@ -927,16 +927,12 @@
 - [ ] In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer.
 - [ ] In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.
 
-
-
 ### You need to create a copy of a custom Compute Engine Virtual Machine (VM) to facilitate an expected increase in application traffic due to a business acquisition. What should you do?
 
 - [ ] Create a Compute Engine snapshot of your base VM. Create your images from that snapshot.
 - [ ] Create a Compute Engine snapshot of your base VM. Create your instances from that snapshot.
 - [ ] Create a custom Compute Engine image from a snapshot. Create your images from that image.
 - [x] Create a custom Compute Engine image from a snapshot. Create your instances from that image.
-
-
 
 ### You have deployed an application on a single Compute Engine instance. The application writes logs to disk. Users start reporting errors with the application. You want to diagnose the problem. What should you do?
 
@@ -975,8 +971,6 @@
 - [x] Migrate the workload to a Compute Engine VM. Start and stop the instance as needed.
 - [ ] Create an Instance Template with Preemptible VMs On. Create a Managed Instance Group from the template and adjust Target CPU Utilization. Migrate the workload.
 
-
-
 ### You are developing a new application and are looking for a Jenkins installation to build and deploy your source code. You want to automate the installation as quickly and easily as possible. What should you do?
 
 - [x] Deploy Jenkins through the Google Cloud Marketplace.
@@ -984,16 +978,12 @@
 - [ ] Create a new Kubernetes Engine cluster. Create a deployment for the Jenkins image.
 - [ ] Create an instance template with the Jenkins executable. Create a Managed Instance Group with this template.
 
-
-
 ### You have downloaded and installed the gcloud command line interface (CLI) and have authenticated with your Google Account. Most of your Compute Engine instances in your project run in the europe-west1-d zone. You want to avoid having to specify this zone with each CLI command when managing these instances. What should you do?
 
 - [x] Set the europe-west1-d zone as the default zone using the gcloud config subcommand.
 - [ ] In the Settings page for Compute Engine under Default location, set the zone to europe-west1-d.
 - [ ] In the CLI installation directory, create a file called default.conf containing zone=europe-west1-d.
 - [ ] Create a Metadata entry on the Compute Engine page with key compute/zone and value europe-west1-d.
-
-
 
 ### The core business of your company is to rent out construction equipment at large scale. All the equipment that is being rented out has been equipped with multiple sensors that send event information every few seconds. These signals can vary from engine status, distance traveled, fuel level, and more. Customers are billed based on the consumption monitored by these sensors. You expect high throughput - up to thousands of events per hour per device - and need to retrieve consistent data based on the time of the event. Storing and retrieving individual signals should be atomic. What should you do?
 
