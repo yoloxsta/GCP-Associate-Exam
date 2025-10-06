@@ -1078,7 +1078,6 @@
 - [ ] Set up a high-priority (1000) rule that blocks all egress and a low-priority (65534) rule that allows only the appropriate ports.
 - [ ] Set up a high-priority (1000) rule to allow the appropriate ports.
 
-
 ### Your company runs its Linux workloads on Compute Engine instances. Your company will be working with a new operations partner that does not use Google Accounts. You need to grant access to the instances to your operations partner so they can maintain the installed tooling. What should you do?
 
 - [x] Enable Cloud IAP for the Compute Engine instances, and add the operations partner as a Cloud IAP Tunnel User.
@@ -1173,7 +1172,6 @@
 - [ ] Create a ticket with Google Billing Support to ask them to send the invoice to your company.
 - [x] Change the billing account of your projects to the billing account of your company.
 
-
 ### You are running a data warehouse on BigQuery. A partner company is offering a recommendation engine based on the data in your data warehouse. The partner company is also running their application on Google Cloud. They manage the resources in their own project, but they need access to the BigQuery dataset in your project. You want to provide the partner company with access to the dataset. What should you do?
 
 - [ ] Create a Service Account in your own project, and grant this Service Account access to BigQuery in your project.
@@ -1181,14 +1179,12 @@
 - [ ] Ask the partner to create a Service Account in their project, and have them give the Service Account access to BigQuery in their project.
 - [x] Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.
 
-
 ### Your web application has been running successfully on Cloud Run for Anthos. You want to evaluate an updated version of the application with a specific percentage of your production users (canary deployment). What should you do?
 
 - [ ] Create a new service with the new version of the application. Split traffic between this version and the version that is currently running.
 - [x] Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.
 - [ ] Create a new service with the new version of the application. Add HTTP Load Balancer in front of both services.
 - [ ] Create a new revision with the new version of the application. Add HTTP Load Balancer in front of both revisions.
-
 
 ### Your company developed a mobile game that is deployed on Google Cloud. Gamers are connecting to the game with their personal phones over the Internet. The game sends UDP packets to update the servers about the gamers' actions while they are playing in multiplayer mode. Your game backend can scale over multiple Virtual Machines (VMs), and you want to expose the VMs over a single IP address. What should you do?
 
@@ -1224,7 +1220,6 @@
 - [ ] Save the automatic first-of-the-month backup for three years. Store the backup file in an Archive class Cloud Storage bucket.
 - [ ] Set up an on-demand backup for the first of the month. Write the backup to an Archive class Cloud Storage bucket.
 - [ ] Convert the automatic first-of-the-month backup to an export file. Write the export file to a Coldline class Cloud Storage bucket.
-
 
 ### You are monitoring an application and receive user feedback that a specific error is spiking. You notice that the error is caused by a Service Account having insufficient permissions. You are able to solve the problem but want to be notified if the problem recurs. What should you do?
 
