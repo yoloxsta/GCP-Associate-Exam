@@ -1238,7 +1238,6 @@
 - [ ] Provision Compute Engine instances with local SSDs attached.
 - [x] Provision Compute Engine instances with M1 machine type.
 
-
 ### You have developed an application that consists of multiple microservices, with each microservice packaged in its own Docker container image. You want to deploy the entire application on Google Kubernetes Engine so that each microservice can be scaled individually. What should you do?
 
 - [ ] Create and deploy a Custom Resource Definition per microservice.
