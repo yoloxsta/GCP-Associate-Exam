@@ -1124,7 +1124,6 @@
 - [x] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project.
 - [ ] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the organization level.
 
-
 ### You are building an application that processes data files uploaded from thousands of suppliers. Your primary goals for the application are data security and the expiration of aged data. You need to design the application to: Restrict access so that suppliers can access only their own data. Give suppliers write access to data only for 30 minutes. Delete data that is over 45 days old. You have a very short development cycle, and you need to make sure that the application requires minimal maintenance. Which two strategies should you use? (Choose two.)
 
 - [x] Build a lifecycle policy to delete Cloud Storage objects after 45 days.
