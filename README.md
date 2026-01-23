@@ -49,7 +49,7 @@
 - [ ] Add the support team group to the roles/spanner.databaseReader role.
 - [ ] Add the support team group to the roles/stackdriver.accounts.viewer role.
 
-### You want to run a single caching HTTP reverse proxy on GCP for a latency-sensitive website. This specific reverse proxy consumes almost no CPU. You want to have a 30-GB in-memory cache, and need an additional 2 GB of memory for the rest of the processes. You want to minimize cost. How should you run this reverse proxy?
+### You want to run a single caching HTTP reverse proxy on GCP for a latency-sensitive website. This specific reverse proxy consumes almost no CPU. You want to have a 30-GB in-memory cache,and need an additional 2 GB of memory for the rest of the processes. You want to minimize cost. How should you run this reverse proxy?
 
 - [x] Create a Cloud Memorystore for Redis instance with 32-GB capacity.
 - [ ] Run it on Compute Engine, and choose a custom instance type with 6 vCPUs and 32 GB of memory.
