@@ -5,7 +5,7 @@
 - [ ] Execute the Deployment Manager template against a separate project with the same configuration, and monitor for failures.
 - [x] Execute the Deployment Manager template using the C-preview option in the same project, and observe the state of interdependent resources.
 
-### Your company has a 3-tier solution running on Compute Engine. The configuration of the current infrastructure is shown below. Each tier has a service account that is associated with all instances within it. You need to enable communication on TCP port 8080 between tiers as follows: Instances in tier #1 must communicate with tier #2. Instances in tier #2 must communicate with tier #3. What should you do?
+### Your company has a 3-tier solution running on Compute Engine.The configuration of the current infrastructure is shown below. Each tier has a service account that is associated with all instances within it. You need to enable communication on TCP port 8080 between tiers as follows: Instances in tier #1 must communicate with tier #2. Instances in tier #2 must communicate with tier #3. What should you do?
 
 ![3-tier solution running on Compute Engine](images/tier3.png)
 
